@@ -1,0 +1,31 @@
+
+.headerMenu{
+    border-bottom: 1px solid #E0E0E0;
+    background-color:yellow;
+    height: 70px;
+    width:100%;
+    top: 0px;
+    overflow: hidden;
+    position: fixed;
+}
+body{
+    background-image: url(../Images/Capture.PNG);
+    
+}
+img{
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+}
+ 
+  .card{
+      position: relative;
+      left: 300px;
+      top:100px;
+      height:500px;
+      width:900px;
+      border: 1px solid #AD2727;
+      border-radius: 5px;
+      background-color:red;
+     
+  }
+  
