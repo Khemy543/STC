@@ -31,4 +31,28 @@ img{
      
   }
   
+  .card1{
+    position: relative;
+    left: 300px;
+    top:100px;
+    height:100px;
+    width:400px;
+    border: 1px solid #AD2727;
+    border-radius: 5px;
+    background-color:white;
+  
+   
+}
+.card2{
+    position: relative;
+    left: 300px;
+    top:100px;
+    height:100px;
+    width:400px;
+    border: 1px solid #AD2727;
+    border-radius: 5px;
+    background-color:white;
+  
+   
+}
  
