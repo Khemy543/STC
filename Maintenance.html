@@ -66,7 +66,7 @@
                     <div class="form-section form-section--horizontal">
                         <div class="input-field input-field--horizontal">
                             <label class="input-field__label input-field__label--start">Part Name</label>
-                            <select name="" id="" class="input-field__input input-field__input--small-fixed">
+                            <select name="" id="partName" class="input-field__input input-field__input--small-fixed">
                                 <option >Bellow</option>  
                                 <option >Tank</option>  
                                 <option >Fuse</option> 
@@ -74,35 +74,39 @@
                         </div>
                         <div class="input-field input-field--horizontal">
                             <label class="input-field__label input-field__label--right">Cost</label>
-                            <input name="" id="" class="input-field__input input-field__input--tiny-fixed">
+                            <input name="" type="number" id="partCost" class="input-field__input input-field__input--tiny-fixed">
                         </div>
                         <div class="input-field input-field--horizontal">
                             <label class="input-field__label input-field__label--right">Ouantity</label>
-                            <input name="" id="" class="input-field__input input-field__input--tiny-fixed">
+                            <input name="" type="number" id="partOuantity" class="input-field__input input-field__input--tiny-fixed">
                         </div>
                         <div class="input-field input-field--horizontal">
                             <label class="input-field__label input-field__label--right">Total</label>
-                            <input name="" id="" class="input-field__input input-field__input--tiny-fixed">
+                            <input name="" type="number" id="partTotal" class="input-field__input input-field__input--tiny-fixed">
                         </div>
                         <div class="input-field input-field--horizontal input-field--center">
-                            <button class="input-field__button">Add Part</button>
+                            <button type="button" id="addPartButton" class="input-field__button">Add Part</button>
                         </div>
                     </div>
                     <div class="form-section">
                         <div class="table-field">
                             <table class="table">
                                 <thead>
-                                    <th class="table__head">Name</th>
-                                    <th class="table__head">Cost</th>
-                                    <th class="table__head">Quantity</th>
-                                    <th class="table__head">Total</th>
+                                    <tr>
+                                        <th class="table__head">Name</th>
+                                        <th class="table__head">Cost</th>
+                                        <th class="table__head">Quantity</th>
+                                        <th class="table__head">Total</th>
+                                    </tr>
                                 </thead>
-                                <tbody>
+                                <tbody id="partTableBody">
                                     <!-- remove the td when working with data. this is for only styling -->
-                                    <td>Emma</td>
-                                    <td>47</td>
-                                    <td>1</td>
-                                    <td>12</td>
+                                    <!-- <tr>
+                                        <td>Emma</td>
+                                        <td>47</td>
+                                        <td>1</td>
+                                        <td>12</td>
+                                    </tr> -->
                                 </tbody>
                             </table>
                         </div>
@@ -113,7 +117,7 @@
                     <div class="form-section form-section--horizontal">
                         <div class="input-field input-field--horizontal">
                             <label class="input-field__label input-field__label--start">Consumable Name</label>
-                            <select name="" id="" class="input-field__input input-field__input--small-fixed">
+                            <select name="" id="consumableName" class="input-field__input input-field__input--small-fixed">
                                 <option >Injector</option>  
                                 <option >Tank</option>  
                                 <option >Fuse</option>  
@@ -121,35 +125,39 @@
                         </div>
                         <div class="input-field input-field--horizontal">
                             <label class="input-field__label input-field__label--right">Cost</label>
-                            <input name="" id="" class="input-field__input input-field__input--tiny-fixed">
+                            <input name="" type="number" id="consumableCost" class="input-field__input input-field__input--tiny-fixed">
                         </div>
                         <div class="input-field input-field--horizontal">
                             <label class="input-field__label input-field__label--right">Ouantity</label>
-                            <input name="" id="" class="input-field__input input-field__input--tiny-fixed">
+                            <input name="" type="number" id="consumableOuantity" class="input-field__input input-field__input--tiny-fixed">
                         </div>
                         <div class="input-field input-field--horizontal">
                             <label class="input-field__label input-field__label--right">Total</label>
-                            <input name="" id="" class="input-field__input input-field__input--tiny-fixed">
+                            <input name="" type="number" id="consumableTotal" class="input-field__input input-field__input--tiny-fixed">
                         </div>
                         <div class="input-field input-field--horizontal input-field--center">
-                            <button class="input-field__button">Add Consumable</button>
+                            <button type="button" id="addConsumableButton" class="input-field__button">Add Consumable</button>
                         </div>
                     </div>
                     <div class="form-section">
                         <div class="table-field">
                             <table class="table">
                                 <thead>
-                                    <th class="table__head">Name</th>
-                                    <th class="table__head">Cost</th>
-                                    <th class="table__head">Quantity</th>
-                                    <th class="table__head">Total</th>
+                                    <tr>
+                                        <th class="table__head">Name</th>
+                                        <th class="table__head">Cost</th>
+                                        <th class="table__head">Quantity</th>
+                                        <th class="table__head">Total</th>
+                                    </tr>
                                 </thead>
-                                <tbody>
-                                    <!-- remove the td when working with data. this is for only styling -->
-                                    <td>Emma</td>
-                                    <td>47</td>
-                                    <td>1</td>
-                                    <td>12</td>
+                                <tbody id="consumableTableBody">
+                                    <tr>
+                                        <!-- remove the td when working with data. this is for only styling -->
+                                        <!-- <td>Emma</td>
+                                        <td>47</td>
+                                        <td>1</td>
+                                        <td>12</td> -->
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -161,6 +169,62 @@
             </form>
         </div>
     </div>    
+
+    <script>
+        var partName = document.getElementById('partName');
+        var partCost = document.getElementById('partCost');
+        var partOuantity = document.getElementById('partOuantity');
+        var partTotal = document.getElementById('partTotal');
+        var partTableBody = document.getElementById('partTableBody');
+        var addPartButton = document.getElementById('addPartButton');
+
+        var consumableName = document.getElementById('consumableName');
+        var consumableCost = document.getElementById('consumableCost');
+        var consumableOuantity = document.getElementById('consumableOuantity');
+        var consumableTotal = document.getElementById('consumableTotal');
+        var consumableTableBody = document.getElementById('consumableTableBody');
+        var addConsumableButton = document.getElementById('addConsumableButton');
+        
+        function dataCell(value){
+            var cell = document.createElement('td');
+            var text = document.createTextNode(value);
+            cell.appendChild(text);
+            return cell;
+        }
+
+        addPartButton.addEventListener('click', function(e){
+            // create a table row to hold the new data inputted
+            var tableRow = document.createElement('tr');
+            // create a data column for each input data
+            // get the value in the partName element and create a new data cell
+            var name = dataCell(partName.value);
+            tableRow.appendChild(name);
+            var cost = dataCell(partCost.value);
+            tableRow.appendChild(cost);
+            var quantity = dataCell(partOuantity.value);
+            tableRow.appendChild(quantity);
+            var total = dataCell(partTotal.value);
+            tableRow.appendChild(total);
+            partTableBody.appendChild(tableRow);
+        });
+
+        addConsumableButton.addEventListener('click', function(e){
+            // create a table row to hold the new data inputted
+            var tableRow = document.createElement('tr');
+            // create a data column for each input data
+            // get the value in the partName element and create a new data cell
+            var name = dataCell(consumableName.value);
+            tableRow.appendChild(name);
+            var cost = dataCell(consumableCost.value);
+            tableRow.appendChild(cost);
+            var quantity = dataCell(consumableOuantity.value);
+            tableRow.appendChild(quantity);
+            var total = dataCell(consumableTotal.value);
+            tableRow.appendChild(total);
+            consumableTableBody.appendChild(tableRow);
+        });
+        
+    </script>
 
 
 
