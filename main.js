@@ -17,7 +17,7 @@ $(function () {
 
     $.ajax({
 type :'POST',
-url:'https://fingerapi20180423093629.azurewebsites.net/postUsers/signups',
+url:'',
 data:register ,
 success:function(newRegister){
 
