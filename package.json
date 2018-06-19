@@ -1,0 +1,23 @@
+{
+  "name": "stc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "eslint": "^4.19.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Khemy543/STC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Khemy543/STC/issues"
+  },
+  "homepage": "https://github.com/Khemy543/STC#readme"
+}

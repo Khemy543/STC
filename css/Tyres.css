@@ -47,6 +47,7 @@ body, html {
     flex-direction: row;
     align-items: center;
     padding: 0;
+    flex-flow: row wrap;
 }
 
 /* styles for the input field */
@@ -116,7 +117,7 @@ body, html {
 .input-field__button{
     outline: none;
     border: 1px solid transparent;
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 0.5rem 0.9rem;
     text-align: center;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
@@ -125,6 +126,8 @@ body, html {
     background: rgb(42, 170, 255);
     color: white;
     min-width: 80px;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 
 /* modifiers for the input field button */
@@ -133,7 +136,7 @@ body, html {
 }
 
 .input-field__button--large{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 0.8rem 1.2rem;
     line-height: normal;
 }
@@ -187,3 +190,4 @@ body, html {
     .table-field{
         overflow-x: scroll;
     }
+}
